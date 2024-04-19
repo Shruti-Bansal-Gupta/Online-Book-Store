@@ -6,6 +6,7 @@ import {
   import Home from "../home/Home";
   import Shop from "../shop/Shop";
 import Blog from "../components/Blog";
+import About from "../components/About.jsx";
 
   const router = createBrowserRouter([
     {
