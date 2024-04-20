@@ -1,11 +1,11 @@
 import React, { useEffect,useState } from 'react'
 import BookCards from '../components/BookCards';
 
-const Favouritebooks = () => {
+const BestSellerbooks = () => {
     const [books,setBooks] = useState([]);
 
     useEffect(()=>{
-        fetch("http://localhost:5000/all-books").then(res=>res.json()).then(data=>setBooks(data))
+        fetch("http://localhost:5000/all-books").then(res=>res.json()).then(data=>setBooks(data .slice(0,8)))
     }, [])
   return (
     <div>
@@ -14,4 +14,4 @@ const Favouritebooks = () => {
   )
 }
 
-export default Favouritebooks
+export default BestSellerbooks;
