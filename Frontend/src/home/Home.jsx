@@ -3,6 +3,8 @@ import Banner from '../components/Banner'
 import BestSellerbooks from './BestSellerbooks'
 import FavBook from './FavBook'
 import PromoBanner from './PromoBanner'
+import OtherBooks from './OtherBooks'
+import Review from './Review'
 
 
 
@@ -13,6 +15,8 @@ const Home = () => {
         <BestSellerbooks/>
         <FavBook/>
         <PromoBanner/>
+        <OtherBooks/>
+        <Review/>
     </div>
   )
 }
