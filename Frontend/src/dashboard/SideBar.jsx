@@ -33,8 +33,8 @@ export const SideBar = () => {
           <Sidebar.Item href="#" icon={HiUser}>
             Users
           </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiShoppingBag}>
-            Products
+          <Sidebar.Item href="/admin/dashboard/cart" icon={HiShoppingBag}>
+            Cart
           </Sidebar.Item>
           <Sidebar.Item href="/login" icon={HiArrowSmRight}>
             Sign In
@@ -43,7 +43,7 @@ export const SideBar = () => {
             Log Out
           </Sidebar.Item>
         </Sidebar.ItemGroup>
-        <Sidebar.ItemGroup>
+        {/* <Sidebar.ItemGroup>
           <Sidebar.Item href="#" icon={HiChartPie}>
             Upgrade to Pro
           </Sidebar.Item>
@@ -53,7 +53,7 @@ export const SideBar = () => {
           <Sidebar.Item href="#" icon={BiBuoy}>
             Help
           </Sidebar.Item>
-        </Sidebar.ItemGroup>
+        </Sidebar.ItemGroup> */}
       </Sidebar.Items>
     </Sidebar>
   )

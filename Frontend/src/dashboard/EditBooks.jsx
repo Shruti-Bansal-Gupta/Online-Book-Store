@@ -1,11 +1,10 @@
-import React from 'react'
-import { Label, Select, TextInput, Textarea, Button } from "flowbite-react";
+import React, { useState } from 'react'
+import { Label, Select, TextInput, Textarea, Button, Checkbox } from "flowbite-react";
 import { useLoaderData, useParams } from 'react-router-dom';
 const EditBooks = () => {
   const {id} = useParams();
-  const {bookTitle,authorName,imageURL, category,bookDescription, bookPDFURL} = useLoaderData()
+  const {bookTitle,authorName,imageURL,category,bookDescription, bookPDFURL} = useLoaderData();
   
-
   const bookCategories = [
     "Fiction",
     "Non-Fiction",
@@ -165,10 +164,13 @@ const EditBooks = () => {
        <Button type="submit" className='mt-5'>
          Update Book
         </Button>
-
       </form>
     </div>
   )
 }
 
 export default EditBooks
+
+
+
+

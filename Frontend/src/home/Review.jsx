@@ -22,7 +22,7 @@ const Review = () => {
       <div>
       <Swiper
         slidesPerView={1}
-        spaceBetween={30}
+        spaceBetween={10}
         pagination={{
           clickable: true,
         }}
@@ -79,8 +79,8 @@ const Review = () => {
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, vero sequi officiis ad quia 
                     saepe nesciunt provident maxime aliquid,quam harum fuga molestiae distinctio. Repellat 
                     reprehenderit quisquam maiores quas cum!</p>
-                    {/* <Avatar img={propic} alt="avatar of Jese" rounded 
-                    className='w-10 mb-4'/> */}
+                    <Avatar img={propic} alt="avatar of Jese" rounded 
+                    className='w-10 mb-4'/>
                     <h5 className='text-lg font-medium'>Mark Ping</h5>
                     <p className='text-base'>CEO, ABC company</p>
                </div>
@@ -101,8 +101,8 @@ const Review = () => {
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, vero sequi officiis ad quia 
                     saepe nesciunt provident maxime aliquid,quam harum fuga molestiae distinctio. Repellat 
                     reprehenderit quisquam maiores quas cum!</p>
-                    {/* <Avatar img={propic} alt="avatar of Jese" rounded 
-                    className='w-10 mb-4'/> */}
+                    <Avatar img={propic} alt="avatar of Jese" rounded 
+                    className='w-10 mb-4'/>
                     <h5 className='text-lg font-medium'>Mark Ping</h5>
                     <p className='text-base'>CEO, ABC company</p>
                </div>

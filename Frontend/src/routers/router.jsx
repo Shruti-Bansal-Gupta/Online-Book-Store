@@ -10,6 +10,7 @@ import About from "../components/About.jsx";
 import SingleBook from "../shop/SingleBook.jsx";
 import DashBoardLayout from "../dashboard/DashBoardLayout.jsx";
 import DashBoard from "../dashboard/DashBoard.jsx";
+import Cart from "../dashboard/Cart.jsx";
 import Uploadbook from "../dashboard/Uploadbook.jsx";
 import Managebook from "../dashboard/Managebook.jsx";
 import EditBooks from "../dashboard/EditBooks.jsx";
@@ -65,6 +66,10 @@ import Logout from "../components/Logout.jsx";
           path: "/admin/dashboard/edit-books/:id",
           element:  <EditBooks/>,
           loader: ({params})=> fetch(`https://localhost:5000/book/${params.id}`)
+         },
+         {
+          path: "/admin/dashboard/cart",
+          element: <Cart/>
          }
       ]
     },{
